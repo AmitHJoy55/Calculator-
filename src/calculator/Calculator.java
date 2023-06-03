@@ -204,9 +204,5 @@ public class Calculator implements ActionListener {
         }
         
     }
-
-//    private void add(JButton divButton) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
     
 }
