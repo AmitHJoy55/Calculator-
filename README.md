@@ -1,1 +1,1 @@
-# Calculator-
+Creating Calculator using Java Swing Library . Swing is a Java Foundation Classes [JFC] library and an extension of the Abstract Window Toolkit [AWT]. Swing offers much-improved functionality over AWT, new components, expanded components features, and excellent event handling with drag-and-drop support.
