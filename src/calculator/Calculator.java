@@ -21,7 +21,7 @@ public class Calculator implements ActionListener {
     JPanel panel;
     
     //Set Font size & style 
-    Font myfont = new Font("Ink Free" , Font.BOLD , 30) ;
+    Font myfont = new Font("calibri",Font.PLAIN, 40) ;
     double num1 = 0 , num2 = 0 ,result = 0;
     char operator ;
     
@@ -31,9 +31,12 @@ public class Calculator implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,550);
         frame.setLayout(null);
+        Color color=new Color(255, 239 ,213);
+        frame.getContentPane().setBackground(color);
         frame.setBackground(Color.GRAY);
         textfield = new JTextField() ;
-        textfield.setBounds(50,25, 300, 50) ;
+        textfield.setBounds(50, 20, 300, 60) ;
+        textfield.setBackground(Color.LIGHT_GRAY);
         textfield.setFont(myfont) ;
         textfield.setEditable(false);
         
@@ -75,14 +78,15 @@ public class Calculator implements ActionListener {
             numberButtons[i].setFocusable(false);
         }
         
-        //Defining neg,clr,del Buttons  positions 
-        negButton.setBounds(50,430,100,50);
-        delButton.setBounds(150,430,100,50);
-        clrButton.setBounds(250,430,100,50);
+        //Defining neg,clr,del Buttons  positions
+        //textfield position 50, 20, 300, 60
+        negButton.setBounds(50,100,100,50);
+        delButton.setBounds(150,100,100,50);
+        clrButton.setBounds(250,100,100,50);
         
         //Setting buttons 
         panel = new JPanel();
-        panel.setBounds(50,100,300,300);
+        panel.setBounds(50,170,300,300);
         panel.setLayout(new GridLayout(4,4,10,10));
         panel.setBackground(Color.GRAY);
         panel.add(numberButtons[1]);
